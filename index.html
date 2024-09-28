@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1C1C1C',
+                        textColor: "#3D495B"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header
+        class=" flex items-center justif-between lg:justify-around py-4 px-5 rounded-xl w-[95%] lg:w-[65%] mx-auto sticky top-10 z-[1000]">
+        <div class="nav-1 text-white gap-6 w-[45%] justify-start hidden lg:flex">
+            <a href="#benefits">Benefits</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#testimonials">Testimonials</a>
+        </div>
+        <div class="flex justify-center w-[10%]">
+            <img src="./assets/logo.svg" alt="">
+        </div>
+        <div class="nav-2 w-[90%] lg:w-[45%] text-white flex items-center gap-8 justify-end">
+            <div class="relative"><!-- Add 'relative' to position dropdown correctly -->
+                <div class="all-pages cursor-pointer">
+                    <span class="lg:flex hidden items-center gap-3">All Pages
+                        <img src="./assets/dropdown.svg" alt="">
+                    </span>
+                    <div class="bg-white p-2 rounded-lg  lg:hidden">
+                        <img src="./assets/hamburger.svg" alt="">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="h-[30px] bg-transparent">
+                    </div>
+                    <div class="dropdown-items">
+                        <a href="">
+                            <div class="house">
+                                <img src="./assets/house.svg" alt="">
+                            </div>
+                            <p>Home</p>
+                        </a>
+                        <a href="">
+                            <div class="house">
+                                <img src="./assets/phone.svg" alt="">
+                            </div>
+                            <p>Contact</p>
+                        </a>
+                        <a href="">
+                            <div class="house">
+                                <img src="./assets/light-2.svg" alt="">
+                            </div>
+                            <p>Waitlist</p>
+                        </a>
+                        <a href="">
+                            <div class="house">
+                                <img src="./assets/lock.svg" alt="">
+                            </div>
+                            <p>Privacy Policy</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white hidden lg:block py-3 px-5 hover:bg-[#F8FAFC] duration-300 text-black rounded-lg">
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Main Body -->
+    <main class="h-[90vh]">
+
+        <!-- Hero Section -->
+        <section class="h-full lg:w-[65%] px-[5%] lg:px-0 mx-auto flex flex-col items-center justify-center ">
+            <a href=""
+                class="flex items-center border-[1px] mb-5 lg:mb-0 border-zinc-200 hover:bg-[#F8FAFC] py-2 px-3 duration-200 gap-1 rounded-full">
+                <img src="./assets/light.svg" alt="">
+                <p>Join the waitlist for updates</p>
+                <div class="bg-primary p-[3px] rounded-full">
+                    <img src="./assets/arrow-right.svg" alt="">
+                </div>
+            </a>
+            <div class="flex flex-col items-center text-center relative">
+                <h1 class="heading text-4xl lg:text-7xl font-bold  lg:leading-[5.5rem]">
+                    Elevate Your SaaS Product with This Standout Template
+                </h1>
+                <img src="./assets/sketch.avif" class="hidden lg:block absolute top-[36%] right-[25%]" width="250"
+                    alt="">
+                <p class="text-textColor lg:text-lg mt-10 lg:mt-0">Elevate your SaaS product with this expertly designed
+                    template,
+                    built for SaaS growth.</p>
+            </div>
+            <a class="get-btn mt-10 bg-primary text-white text-lg hover:opacity-90 duration-300 px-6 py-4 rounded-xl">
+                Get this Template
+            </a>
+            <div class="flex mt-10 items-center bg-[#F8FAFC] border-[1px] border-zinc-200 rounded-full">
+                <div class="flex items-center relative">
+                    <div class="border-[3px] border-white rounded-full">
+                        <img src="./assets/person-1.avif" width="30" alt="">
+                    </div>
+                    <div class="border-[3px] relative right-4 border-white rounded-full">
+                        <img src="./assets/person-2.avif" width="30" alt="">
+                    </div>
+                    <div class="border-[3px] right-8 relative border-white rounded-full">
+                        <img src="./assets/person-3.avif" width="30" alt="">
+                    </div>
+                </div>
+                <p class="text-textColor relative right-6 text-base">Loved by over 3 million users</p>
+            </div>
+        </section>
+
+        <!-- Mobile App secton -->
+        <section class="">
+            <div class="px-[5%] lg:px-0 lg:w-[80%] relative mx-auto rounded-2xl">
+                <div class="hero-1-container relative z-[10] rounded-3xl w-[90%] mx-auto lg:w-[85%] p-[6px]">
+                    <img src="./assets/hero-1.svg" class=" border-[#dde5ed] border-[1px] rounded-xl lg:rounded-3xl" alt="">
+                </div>
+                <img src="./assets/hero-bg.svg" class="rounded-t-[20px] lg:rounded-t-[50px] h-full lg:h-[60%] w-[90%] lg:w-full object-cover rounded-b-[10px] lg:rounded-b-[20px] absolute top-[10%] lg:top-[25rem] z-1"
+                    alt="">
+                <div
+                    class="bg-primary mt-10 p-4 lg:p-2 rounded-2xl lg:rounded-full relative z-[2] flex flex-col lg:flex-row items-start lg:items-center justify-center gap-1 bg-zinc-800 w-[90%] lg:w-[70%] mx-auto ">
+                    <img src="./assets/star.svg" alt="">
+                    <p class="text-white">Unlock smarter productivity with AI-driven tools, personalized workflows, and
+                        seamless collaboration.</p>
+                </div>
+                <div class="relative z-[2] flex flex-col lg:flex-row justify-between h-full mt-16 w-[90%] mx-auto">
+                    <div class="flex lg:flex-col items-center gap-2 px-2">
+                        <div class="bg-zinc-800 p-2 rounded-full border-[1px] border-zinc-700">
+                            <img src="./assets/smart-task.svg" alt="">
+                        </div>
+                        <p class="text-white font-semibold text-start lg:text-center">Smart Task Prioritization with AI Insights</p>
+                    </div>
+                    <div class="divider border-[1px] border-zinc-700 border-dashed w-full h-[1px] mt-10 mb-10 lg:mb-0 lg:mt-0 lg:w-[1px] lg:h-[7rem]"></div>
+                    <div class="flex lg:flex-col items-center gap-2 px-2">
+                        <div class="bg-zinc-800 p-2 rounded-full border-[1px] border-zinc-700">
+                            <img src="./assets/unified-workspace.svg" alt="">
+                        </div>
+                        <p class="text-white font-semibold text-start lg:text-center">Unified Workspace for Teamwork</p>
+                    </div>
+                    <div class="divider border-[1px] border-zinc-700 border-dashed w-full h-[1px] mt-10 mb-10 lg:mb-0 lg:mt-0 lg:w-[1px] lg:h-[7rem]"></div>
+                    <div class="flex lg:flex-col items-center gap-2 px-2">
+                        <div class="bg-zinc-800 p-2 rounded-full border-[1px] border-zinc-700">
+                            <img src="./assets/advanced-project.svg" alt="">
+                        </div>
+                        <p class="text-white font-semibold text-start lg:text-center">Advanced Project Tracking & Analytics</p>
+                    </div>
+                    <div class="divider border-[1px] border-zinc-700 border-dashed w-full h-[1px] mt-10 lg:mt-0 mb-10 lg:mb-0 lg:w-[1px] lg:h-[7rem]"></div>
+                    <div class="flex lg:flex-col items-center gap-2 px-2">
+                        <div class="bg-zinc-800 p-2 rounded-full border-[1px] border-zinc-700">
+                            <img src="./assets/real-time.svg" alt="">
+                        </div>
+                        <p class="text-white font-semibold text-start lg:text-center ">Real-time Sync Across All Devices</p>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--Company Slider -->
+        <div class="company-slider">
+            <div class="text-center text-textColor mb-5 text-lg font-medium mt-10">
+                Trusted by 1000+ businesses across the world
+            </div>
+            <div class="fade fade-left"></div> <!-- Left fade effect -->
+            <div class="slider-content relative">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            <img src="./assets/vortex.svg" alt="">
+             <img src="./assets/velocity.svg" alt="">
+             <img src="./assets/synergy.svg" alt="">
+             <img src="./assets/enigma.svg" alt="">
+             <img src="./assets/spectrum.svg" alt="">
+             <img src="./assets/lumina.svg" alt="">
+            </div>
+            <div class="fade fade-right"></div> <!-- Right fade effect -->
+         </div>
+
+    </main>
+</body>
+
+</html>
