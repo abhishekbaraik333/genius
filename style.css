@@ -101,7 +101,7 @@ header{
   
   .slider-content {
     display: inline-block;
-    animation: scroll 40s linear infinite; /* Scroll horizontally infinitely */
+    animation: scroll 30s linear infinite; /* Scroll horizontally infinitely */
   }
   
   .slider-content img {
