@@ -639,7 +639,7 @@
                     <div class="bg-zinc-900 p-2 rounded-xl border-[1px] border-zinc-700">
                         <img src="./assets/star.svg" class="w-[35px]" alt="">
                     </div>
-                    <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">AI Task Management
+                    <h3 class="heading text-primary font-semibold text-2xl text-center">AI Task Management
                     </h3>
                     <p class="text-textColor text-lg font-semibold text-center">Automatically prioritize and organize
                         your daily tasks. </p>
@@ -649,7 +649,7 @@
                     <div class="bg-zinc-900 p-2 rounded-xl border-[1px] border-zinc-700">
                         <img src="./assets/unified-workspace.svg" alt="">
                     </div>
-                    <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">Real-Time
+                    <h3 class="heading text-primary font-semibold text-2xl text-center">Real-Time
                         Collaboration
 
                     </h3>
@@ -662,7 +662,7 @@
                     <div class="bg-zinc-900 p-2 rounded-xl border-[1px] border-zinc-700">
                         <img src="./assets/customizable.svg" alt="">
                     </div>
-                    <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">Customizable
+                    <h3 class="heading text-primary font-semibold text-2xl text-center">Customizable
                         Dashboards
                     </h3>
                     <p class="text-textColor text-lg font-semibold text-center">Tailor your workspace to fit your
@@ -674,7 +674,7 @@
                     <div class="bg-zinc-900 p-2 rounded-xl border-[1px] border-zinc-700">
                         <img src="./assets/automated.svg" alt="">
                     </div>
-                    <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">Automated
+                    <h3 class="heading text-primary font-semibold text-2xl text-center">Automated
                         Reminders
                     </h3>
                     <p class="text-textColor text-lg font-semibold text-center">Stay on track with smart deadline
@@ -687,7 +687,7 @@
                     <div class="bg-zinc-900 p-2 rounded-xl border-[1px] border-zinc-700">
                         <img src="./assets/time-blocking.svg" alt="">
                     </div>
-                    <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">Time-Blocking
+                    <h3 class="heading text-primary font-semibold text-2xl text-center">Time-Blocking
                         Tools
 
                     </h3>
@@ -700,7 +700,7 @@
                     <div class="bg-zinc-900 p-2 rounded-xl border-[1px] border-zinc-700">
                         <img src="./assets/calender.svg" alt="">
                     </div>
-                    <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">Integrated
+                    <h3 class="heading text-primary font-semibold text-2xl text-center">Integrated
                         Calendars
 
 
@@ -726,40 +726,284 @@
                 </h2>
             </div>
 
-            <div class="lg:w-[65%] w-[90%] lg:px-0 border-4 lg:border-8 border-white shadow-2xl mt-20 rounded-3xl mx-auto relative overflow-hidden">
+            <div
+                class="lg:w-[65%] w-[90%] lg:px-0 border-4 lg:border-8 border-white shadow-2xl mt-20 rounded-3xl mx-auto relative overflow-hidden">
                 <video poster="./assets/video-bg.jpg" src="./assets/video.mp4"
                     class="video-player h-full w-full hover:brightness-75 duration-200"></video>
                 <img src="./assets/play.svg"
                     class="play-btn w-[50px] h-[50px] absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                     alt="Play Button">
             </div>
-
-
         </section>
+
+        <!-- Pricing Section -->
+        <section class="mt-32">
+        <div class="flex flex-col justify-center items-center">
+            <div
+                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                <img src="./assets/pricing.svg" alt="">
+                <p class="text-textColor font-medium">
+                    Pricing</p>
+            </div>
+            <h2
+                class="heading text-3xl lg:text-6xl font-bold text-center lg:text-start opacity-90 lg:leading-[4.5rem] mt-5">
+                Flexible Pricing Plans
+                </h2>
+            <p
+                class="text-textColor mt-5 lg:mt-3 text-base lg:text-lg font-medium lg:font-semibold text-center lg:text-start">
+                Elevate your SaaS product with this expertly designed template, built for SaaS growth.
+            </p>
+        </div>
+
+        <div class="container mt-5 px-[5%] lg:px-[0px] lg:w-[80%] mx-auto py-10">
+            <div class="flex items-center justify-center">
+                <div class="toggle bg-secondary border-[1px] border-zinc-300 p-2 rounded-xl">
+                    <button class="toggle-btn active" id="monthlyBtn">Monthly</button>
+                    <button class="toggle-btn" id="yearlyBtn">Yearly</button>
+                </div>
+            </div>
+            <div class="plans grid grid-cols-1 lg:grid-cols-3 mt-10  gap-6">
+                <div class="plan border-[1px] border-zinc-200 rounded-2xl">
+                    <div class="bg-secondary border-b-[1px] border-zinc-200 text-start p-8">
+                        <h2 class="heading text-3xl font-semibold">Free plan</h2>
+                        <div class="price text-6xl mt-5">$<span class="heading font-semibold"  id="basicPrice">0</span><span class="text-xl text-textColor">/ per</span><span
+                                class="text-xl text-textColor" id="basicDuration"> month</span></div>
+                                <p class="text-lg font-semibold text-textColor mt-3">Basic tools to get you started.
+                                </p>
+                        <button class="btn mt-5 py-4 px-6 bg-black text-white rounded-xl w-full  opacity-90 hover:opacity-80 duration-200">Get Started</button>
+                    </div>
+                    <div class="text-start px-8 py-4">
+                        <h5 class="text-xl font-semibold">What’s Included
+                        </h5>
+                        <p class="text-textColor text-xl font-medium">Extra features and priority support.
+                        </p>
+                    </div>
+                    <ul class="features px-8 mt-3">
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Task Management
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Data Encryption
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Custom Workflows
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-between">
+                        <div class="h-[1px] w-full bg-zinc-200"></div>
+                        <!-- <div class="bg-secondary p-1 border-[1px] border-zinc-200">
+                            <img src="./assets/small-plus.svg" alt="">
+
+                        </div> -->
+                    </div>
+                    <ul class="no-features px-8 mt-3">
+                        <li>
+                            <img src="./assets/cross.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Deadline Alerts
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/cross.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Real Time Sync
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/cross.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Collaboration Tools
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plan border-[1px] border-zinc-200 rounded-2xl">
+                    <div class="bg-secondary border-b-[1px] border-zinc-200 text-start p-8">
+                        <h2 class="heading text-3xl font-semibold flex items-center justify-between">Pro plan <div class="text-end text-sm text-white bg-black p-2 rounded-full">Most Popular</div>
+                        </h2>
+                        <div class="price text-6xl mt-5">$<span class="heading font-semibold" id="proPrice">10</span><span class="text-xl text-textColor">/ per</span><span
+                                class="text-xl text-textColor" id="proDuration"> month</span></div>
+                                <p class="text-lg font-semibold text-textColor mt-3">Comprehensive solutions for teams.
+                                </p>
+                        <button class="btn mt-5 py-4 px-6 bg-black text-white rounded-xl w-full  opacity-90 hover:opacity-80 duration-200">Get Started</button>
+                    </div>
+                    <div class="text-start px-8 py-4">
+                        <h5 class="text-xl font-semibold">What’s Included
+                        </h5>
+                        <p class="text-textColor text-xl font-medium">Full features and dedicated support.
+                        </p>
+                    </div>
+                    <ul class="features px-8 mt-3">
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Task Management
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Data Encryption
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Custom Workflows
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-between">
+                        <div class="h-[1px] w-full bg-zinc-200"></div>
+                        <!-- <div class="bg-secondary p-1 border-[1px] border-zinc-200">
+                            <img src="./assets/small-plus.svg" alt="">
+
+                        </div> -->
+                    </div>
+                    <ul class="no-features px-8 mt-3">
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Deadline Alerts
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/cross.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Real Time Sync
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/cross.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Collaboration Tools
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="plan border-[1px] border-zinc-200 rounded-2xl">
+                    <div class="bg-secondary border-b-[1px] border-zinc-200 text-start p-8">
+                        <h2 class="heading text-3xl font-semibold">Enterprise plan</h2>
+                        <div class="price text-6xl mt-5">$<span class="heading font-semibold" id="enterprisePrice">19</span><span class="text-xl text-textColor">/ per</span><span
+                                class="text-xl text-textColor" id="enterpriseDuration"> month</span></div>
+                                <p class="text-lg font-semibold text-textColor mt-3">Basic tools to get you started.
+                                </p>
+                        <button class="btn mt-5 py-4 px-6 bg-black text-white rounded-xl w-full  opacity-90 hover:opacity-80 duration-200">Get Started</button>
+                    </div>
+                    <div class="text-start px-8 py-4">
+                        <h5 class="text-xl font-semibold">What’s Included
+                        </h5>
+                        <p class="text-textColor text-xl font-medium">Essential features and support.
+                        </p>
+                    </div>
+                    <ul class="features px-8 mt-3">
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Task Management
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Data Encryption
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Custom Workflows
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-between">
+                        <div class="h-[1px] w-full bg-zinc-200"></div>
+                        <!-- <div class="bg-secondary p-1 border-[1px] border-zinc-200">
+                            <img src="./assets/small-plus.svg" alt="">
+
+                        </div> -->
+                    </div>
+                    <ul class="no-features px-8 mt-3">
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Deadline Alerts
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Real Time Sync
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-textColor text-xl font-medium">Collaboration Tools
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-    const video = document.querySelector(".video-player");
-    const playButton = document.querySelector(".play-btn");
+            const video = document.querySelector(".video-player");
+            const playButton = document.querySelector(".play-btn");
 
-    // Play video, hide play button, and show video controls
-    playButton.addEventListener("click", () => {
-        video.play();
-        playButton.style.display = "none";
-        video.setAttribute("controls", "controls"); // Add controls attribute to the video
-    });
-
-   
-
-    // Show play button when video ends
-    video.addEventListener("ended", () => {
-        playButton.style.display = "block";
-        video.removeAttribute("controls"); // Remove controls when video ends
-    });
-});
+            // Play video, hide play button, and show video controls
+            playButton.addEventListener("click", () => {
+                video.play();
+                playButton.style.display = "none";
+                video.setAttribute("controls", "controls"); // Add controls attribute to the video
+            });
 
 
+
+            // Show play button when video ends
+            video.addEventListener("ended", () => {
+                playButton.style.display = "block";
+                video.removeAttribute("controls"); // Remove controls when video ends
+            });
+        });
+
+
+    </script>
+
+    <script>
+        const monthlyBtn = document.getElementById('monthlyBtn');
+        const yearlyBtn = document.getElementById('yearlyBtn');
+        const basicPrice = document.getElementById('basicPrice');
+        const proPrice = document.getElementById('proPrice');
+        const enterprisePrice = document.getElementById('enterprisePrice');
+        const basicDuration = document.getElementById('basicDuration');
+        const proDuration = document.getElementById('proDuration');
+        const enterpriseDuration = document.getElementById('enterpriseDuration');
+
+        const monthlyPrices = { basic: 0, pro: 10, enterprise: 19 };
+        const yearlyPrices = { basic: 0, pro: 99, enterprise: 199 };
+
+        function setMonthly() {
+            monthlyBtn.classList.add('active');
+            yearlyBtn.classList.remove('active');
+            basicPrice.textContent = monthlyPrices.basic;
+            proPrice.textContent = monthlyPrices.pro;
+            enterprisePrice.textContent = monthlyPrices.enterprise;
+            basicDuration.textContent = ' month';
+            proDuration.textContent = ' month';
+            enterpriseDuration.textContent = ' month';
+        }
+
+        function setYearly() {
+            yearlyBtn.classList.add('active');
+            monthlyBtn.classList.remove('active');
+            basicPrice.textContent = yearlyPrices.basic;
+            proPrice.textContent = yearlyPrices.pro;
+            enterprisePrice.textContent = yearlyPrices.enterprise;
+            basicDuration.textContent = ' year';
+            proDuration.textContent = ' year';
+            enterpriseDuration.textContent = ' year';
+        }
+
+        monthlyBtn.addEventListener('click', setMonthly);
+        yearlyBtn.addEventListener('click', setYearly);
     </script>
 </body>
 
