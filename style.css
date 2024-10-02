@@ -188,8 +188,8 @@ header {
 .toggle-btn.active {
   background-color: #fff;
   color: black;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .features li{
@@ -222,4 +222,10 @@ header {
   .logo-overlay {
     top: 60px;
   }
+}
+
+
+.footer-card{
+  background: url(./assets/footer-card-bg.png) center no-repeat;
+  background-size: cover;
 }

@@ -416,7 +416,7 @@
                         <div class="bg-zinc-800 p-2 rounded-xl border-[1px] border-zinc-700">
                             <img src="./assets/star.svg" alt="">
                         </div>
-                        <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">AI-Powered
+                        <h3 class="heading text-primary font-semibold text-2xl text-center">AI-Powered
                             Insights</h3>
                         <p class="text-textColor font-semibold text-center">Smarter task prioritization based on your
                             habits.</p>
@@ -426,7 +426,7 @@
                         <div class="bg-zinc-800 p-2 rounded-xl border-[1px] border-zinc-700">
                             <img src="./assets/seamless.svg" alt="">
                         </div>
-                        <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">Seamless
+                        <h3 class="heading text-primary font-semibold text-2xl text-center">Seamless
                             Collaboration
                         </h3>
                         <p class="text-textColor font-semibold text-center">Effortlessly coordinate with your team in
@@ -438,7 +438,7 @@
                         <div class="bg-zinc-800 p-2 rounded-xl border-[1px] border-zinc-700">
                             <img src="./assets/time-blocking.svg" alt="">
                         </div>
-                        <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">Time-Blocking
+                        <h3 class="heading text-primary font-semibold text-2xl text-center">Time-Blocking
                             Tools
                         </h3>
                         <p class="text-textColor font-semibold text-center">Organize your day with effective scheduling.
@@ -449,7 +449,7 @@
                         <div class="bg-zinc-800 p-2 rounded-xl border-[1px] border-zinc-700">
                             <img src="./assets/automated.svg" alt="">
                         </div>
-                        <h3 class="heading text-primary font-semibold text-2xl text-start lg:text-center">Automated
+                        <h3 class="heading text-primary font-semibold text-2xl text-center">Automated
                             Reminders
                         </h3>
                         <p class="text-textColor font-semibold text-center">Never miss a deadline with smart
@@ -755,16 +755,22 @@
             </p>
         </div>
 
-        <div class="container mt-5 px-[5%] lg:px-[0px] lg:w-[80%] mx-auto py-10">
-            <div class="flex items-center justify-center">
+        <div class="container mt-5 px-[5%] lg:px-[0px] lg:w-[80%] mx-auto py-10 flex flex-col items-center">
+            <div class="flex flex-col lg:flex-row items-center justify-center relative md:w-1/2 mx-auto">
                 <div class="toggle bg-secondary border-[1px] border-zinc-300 p-2 rounded-xl">
                     <button class="toggle-btn active" id="monthlyBtn">Monthly</button>
                     <button class="toggle-btn" id="yearlyBtn">Yearly</button>
                 </div>
+                <div class="flex items-center gap-2 lg:absolute bottom-4 -right-[14rem] lg:-right-[18%] min-[1660px]:-right-2">
+                <img src="./assets/arrow-down.svg" class="absolute top-10 right-0 md:right-16 lg:static rotate-[180deg] lg:rotate-[90deg] transform lg:scale-x-[-1] w-[30px] lg:w-[50px]" alt="">
+                <div class="px-4 py-1 rounded-full text-textColor border-[1px] border-zinc-200 lg:rotate-[10deg]">
+                    40% OFF on Yearly Plan
+                </div>
+            </div>
             </div>
             <div class="plans grid grid-cols-1 lg:grid-cols-3 mt-10  gap-6">
                 <div class="plan border-[1px] border-zinc-200 rounded-2xl">
-                    <div class="bg-secondary border-b-[1px] border-zinc-200 text-start p-8">
+                    <div class="bg-secondary rounded-t-2xl border-b-[1px] border-zinc-200 text-start p-8">
                         <h2 class="heading text-3xl font-semibold">Free plan</h2>
                         <div class="price text-6xl mt-5">$<span class="heading font-semibold"  id="basicPrice">0</span><span class="text-xl text-textColor">/ per</span><span
                                 class="text-xl text-textColor" id="basicDuration"> month</span></div>
@@ -821,7 +827,7 @@
                     </ul>
                 </div>
                 <div class="plan border-[1px] border-zinc-200 rounded-2xl">
-                    <div class="bg-secondary border-b-[1px] border-zinc-200 text-start p-8">
+                    <div class="bg-secondary rounded-t-2xl border-b-[1px] border-zinc-200 text-start p-8">
                         <h2 class="heading text-3xl font-semibold flex items-center justify-between">Pro plan <div class="text-end text-sm text-white bg-black p-2 rounded-full">Most Popular</div>
                         </h2>
                         <div class="price text-6xl mt-5">$<span class="heading font-semibold" id="proPrice">10</span><span class="text-xl text-textColor">/ per</span><span
@@ -880,7 +886,7 @@
                 </div>
 
                 <div class="plan border-[1px] border-zinc-200 rounded-2xl">
-                    <div class="bg-secondary border-b-[1px] border-zinc-200 text-start p-8">
+                    <div class="bg-secondary rounded-t-2xl border-b-[1px] border-zinc-200 text-start p-8">
                         <h2 class="heading text-3xl font-semibold">Enterprise plan</h2>
                         <div class="price text-6xl mt-5">$<span class="heading font-semibold" id="enterprisePrice">19</span><span class="text-xl text-textColor">/ per</span><span
                                 class="text-xl text-textColor" id="enterpriseDuration"> month</span></div>
@@ -891,7 +897,7 @@
                     <div class="text-start px-8 py-4">
                         <h5 class="text-xl font-semibold">What’s Included
                         </h5>
-                        <p class="text-textColor text-xl font-medium">Essential features and support.
+                        <p class="text-textColor text-xl font-medium">Full features and dedicated support.
                         </p>
                     </div>
                     <ul class="features px-8 mt-3">
@@ -937,6 +943,54 @@
                     </ul>
                 </div>
               
+            </div>
+        </div>
+    </section>
+
+    <div class="w-[80%] mx-auto border-t-[1px] border-zinc-200 mt-4 mb-4"></div>
+
+    <!-- All Plans Include -->
+    <section class="px-[5%]">
+        <h4 class="opacity-80 text-lg font-semibold text-center my-5">All Plans Include</h4>
+        <div class="flex items-center justify-center gap-2 flex-wrap">
+        <div
+                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                <img src="./assets/task-mangement.svg" alt="">
+                <p class="text-textColor font-medium">
+                    Task Mangement</p>
+            </div>
+        <div
+                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                <img src="./assets/real-time.svg" alt="">
+                <p class="text-textColor font-medium">
+                    Real-time Collaboration</p>
+            </div>
+        <div
+                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                <img src="./assets/documents-sharing.svg" alt="">
+                <p class="text-textColor font-medium">
+                    Documents Sharing</p>
+            </div>
+        <div
+                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                <img src="./assets/clients-communication.svg" alt="">
+                <p class="text-textColor font-medium">
+                    Clients Communication</p>
+            </div>
+        </div>
+
+        <div class="footer-card h-[500px] lg:h-[300px] w-[100%] lg:w-[65%] mx-auto mt-20 rounded-xl lg:rounded-3xl relative overflow-hidden">
+            <div class="h-full flex flex-col px-[5%] items-start justify-start lg:justify-center mt-10 lg:mt-0">
+                <h3 class="heading text-3xl text-white font-semibold text-center">Get Your 14 Days Free Trial Now</h3>
+                <p class="text-lg text-zinc-400 font-semibold text-center lg:text-start">Start exploring Genius risk-free with our 14-day  free <br> trial offer today and experience seamless.
+                </p>
+                <div class="flex items-center w-full">
+                <button class="btn mt-5 py-4 px-6 bg-white text-black rounded-xl w-full  opacity-90 hover:opacity-80 duration-200 w-full lg:w-[fit-content] font-semibold">Start Free Trial</button>
+            </div>
+            </div>
+            <div class="absolute bottom-0 -right-16 lg:-right-28">
+                <img src="./assets/footer-card-img2.png" class="w-[300px] md:w-[400px] rounded-2xl" alt="">
+                <img src="./assets/footer-card-img1.png" class="absolute top-11 -left-10 w-[300px] md:w-[400px] rounded-2xl" alt="">
             </div>
         </div>
     </section>
