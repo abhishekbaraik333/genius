@@ -738,326 +738,541 @@
 
         <!-- Pricing Section -->
         <section class="mt-32">
-        <div class="flex flex-col justify-center items-center">
-            <div
-                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
-                <img src="./assets/pricing.svg" alt="">
-                <p class="text-textColor font-medium">
-                    Pricing</p>
-            </div>
-            <h2
-                class="heading text-3xl lg:text-6xl font-bold text-center lg:text-start opacity-90 lg:leading-[4.5rem] mt-5">
-                Flexible Pricing Plans
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                    <img src="./assets/pricing.svg" alt="">
+                    <p class="text-textColor font-medium">
+                        Pricing</p>
+                </div>
+                <h2
+                    class="heading text-3xl lg:text-6xl font-bold text-center lg:text-start opacity-90 lg:leading-[4.5rem] mt-5">
+                    Flexible Pricing Plans
                 </h2>
-            <p
-                class="text-textColor mt-5 lg:mt-3 text-base lg:text-lg font-medium lg:font-semibold text-center lg:text-start">
-                Elevate your SaaS product with this expertly designed template, built for SaaS growth.
-            </p>
-        </div>
-
-        <div class="container mt-5 px-[5%] lg:px-[0px] lg:w-[80%] mx-auto py-10 flex flex-col items-center">
-            <div class="flex flex-col lg:flex-row items-center justify-center relative md:w-1/2 mx-auto">
-                <div class="toggle bg-secondary border-[1px] border-zinc-300 p-2 rounded-xl">
-                    <button class="toggle-btn active" id="monthlyBtn">Monthly</button>
-                    <button class="toggle-btn" id="yearlyBtn">Yearly</button>
-                </div>
-                <div class="flex items-center gap-2 lg:absolute bottom-4 -right-[14rem] lg:-right-[18%] min-[1660px]:-right-2">
-                <img src="./assets/arrow-down.svg" class="absolute top-10 right-0 md:right-16 lg:static rotate-[180deg] lg:rotate-[90deg] transform lg:scale-x-[-1] w-[30px] lg:w-[50px]" alt="">
-                <div class="px-4 py-1 rounded-full text-textColor border-[1px] border-zinc-200 lg:rotate-[10deg]">
-                    40% OFF on Yearly Plan
-                </div>
-            </div>
-            </div>
-            <div class="plans grid grid-cols-1 lg:grid-cols-3 mt-10  gap-6">
-                <div class="plan border-[1px] border-zinc-200 rounded-2xl">
-                    <div class="bg-secondary rounded-t-2xl border-b-[1px] border-zinc-200 text-start p-8">
-                        <h2 class="heading text-3xl font-semibold">Free plan</h2>
-                        <div class="price text-6xl mt-5">$<span class="heading font-semibold"  id="basicPrice">0</span><span class="text-xl text-textColor">/ per</span><span
-                                class="text-xl text-textColor" id="basicDuration"> month</span></div>
-                                <p class="text-lg font-semibold text-textColor mt-3">Basic tools to get you started.
-                                </p>
-                        <button class="btn mt-5 py-4 px-6 bg-black text-white rounded-xl w-full  opacity-90 hover:opacity-80 duration-200">Get Started</button>
-                    </div>
-                    <div class="text-start px-8 py-4">
-                        <h5 class="text-xl font-semibold">What’s Included
-                        </h5>
-                        <p class="text-textColor text-xl font-medium">Extra features and priority support.
-                        </p>
-                    </div>
-                    <ul class="features px-8 mt-3">
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Task Management
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Data Encryption
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Custom Workflows
-                            </p>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between">
-                        <div class="h-[1px] w-full bg-zinc-200"></div>
-                        <!-- <div class="bg-secondary p-1 border-[1px] border-zinc-200">
-                            <img src="./assets/small-plus.svg" alt="">
-
-                        </div> -->
-                    </div>
-                    <ul class="no-features px-8 mt-3">
-                        <li>
-                            <img src="./assets/cross.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Deadline Alerts
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/cross.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Real Time Sync
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/cross.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Collaboration Tools
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="plan border-[1px] border-zinc-200 rounded-2xl">
-                    <div class="bg-secondary rounded-t-2xl border-b-[1px] border-zinc-200 text-start p-8">
-                        <h2 class="heading text-3xl font-semibold flex items-center justify-between">Pro plan <div class="text-end text-sm text-white bg-black p-2 rounded-full">Most Popular</div>
-                        </h2>
-                        <div class="price text-6xl mt-5">$<span class="heading font-semibold" id="proPrice">10</span><span class="text-xl text-textColor">/ per</span><span
-                                class="text-xl text-textColor" id="proDuration"> month</span></div>
-                                <p class="text-lg font-semibold text-textColor mt-3">Comprehensive solutions for teams.
-                                </p>
-                        <button class="btn mt-5 py-4 px-6 bg-black text-white rounded-xl w-full  opacity-90 hover:opacity-80 duration-200">Get Started</button>
-                    </div>
-                    <div class="text-start px-8 py-4">
-                        <h5 class="text-xl font-semibold">What’s Included
-                        </h5>
-                        <p class="text-textColor text-xl font-medium">Full features and dedicated support.
-                        </p>
-                    </div>
-                    <ul class="features px-8 mt-3">
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Task Management
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Data Encryption
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Custom Workflows
-                            </p>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between">
-                        <div class="h-[1px] w-full bg-zinc-200"></div>
-                        <!-- <div class="bg-secondary p-1 border-[1px] border-zinc-200">
-                            <img src="./assets/small-plus.svg" alt="">
-
-                        </div> -->
-                    </div>
-                    <ul class="no-features px-8 mt-3">
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Deadline Alerts
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/cross.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Real Time Sync
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/cross.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Collaboration Tools
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="plan border-[1px] border-zinc-200 rounded-2xl">
-                    <div class="bg-secondary rounded-t-2xl border-b-[1px] border-zinc-200 text-start p-8">
-                        <h2 class="heading text-3xl font-semibold">Enterprise plan</h2>
-                        <div class="price text-6xl mt-5">$<span class="heading font-semibold" id="enterprisePrice">19</span><span class="text-xl text-textColor">/ per</span><span
-                                class="text-xl text-textColor" id="enterpriseDuration"> month</span></div>
-                                <p class="text-lg font-semibold text-textColor mt-3">Basic tools to get you started.
-                                </p>
-                        <button class="btn mt-5 py-4 px-6 bg-black text-white rounded-xl w-full  opacity-90 hover:opacity-80 duration-200">Get Started</button>
-                    </div>
-                    <div class="text-start px-8 py-4">
-                        <h5 class="text-xl font-semibold">What’s Included
-                        </h5>
-                        <p class="text-textColor text-xl font-medium">Full features and dedicated support.
-                        </p>
-                    </div>
-                    <ul class="features px-8 mt-3">
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Task Management
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Data Encryption
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Custom Workflows
-                            </p>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between">
-                        <div class="h-[1px] w-full bg-zinc-200"></div>
-                        <!-- <div class="bg-secondary p-1 border-[1px] border-zinc-200">
-                            <img src="./assets/small-plus.svg" alt="">
-
-                        </div> -->
-                    </div>
-                    <ul class="no-features px-8 mt-3">
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Deadline Alerts
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Real Time Sync
-                            </p>
-                        </li>
-                        <li>
-                            <img src="./assets/green-tick.svg" alt="">
-                            <p class="text-textColor text-xl font-medium">Collaboration Tools
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-              
-            </div>
-        </div>
-    </section>
-
-    <div class="w-[80%] mx-auto border-t-[1px] border-zinc-200 mt-4 mb-4"></div>
-
-    <!-- All Plans Include -->
-    <section class="px-[5%]">
-        <h4 class="opacity-80 text-lg font-semibold text-center my-5">All Plans Include</h4>
-        <div class="flex items-center justify-center gap-2 flex-wrap">
-        <div
-                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
-                <img src="./assets/task-mangement.svg" alt="">
-                <p class="text-textColor font-medium">
-                    Task Mangement</p>
-            </div>
-        <div
-                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
-                <img src="./assets/real-time.svg" alt="">
-                <p class="text-textColor font-medium">
-                    Real-time Collaboration</p>
-            </div>
-        <div
-                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
-                <img src="./assets/documents-sharing.svg" alt="">
-                <p class="text-textColor font-medium">
-                    Documents Sharing</p>
-            </div>
-        <div
-                class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
-                <img src="./assets/clients-communication.svg" alt="">
-                <p class="text-textColor font-medium">
-                    Clients Communication</p>
-            </div>
-        </div>
-
-        <div class="footer-card h-[500px] lg:h-[300px] w-[100%] lg:w-[65%] mx-auto mt-20 rounded-xl lg:rounded-3xl relative overflow-hidden">
-            <div class="h-full flex flex-col px-[5%] items-start justify-start lg:justify-center mt-10 lg:mt-0">
-                <h3 class="heading text-3xl text-white font-semibold text-center">Get Your 14 Days Free Trial Now</h3>
-                <p class="text-lg text-zinc-400 font-semibold text-center lg:text-start">Start exploring Genius risk-free with our 14-day  free <br> trial offer today and experience seamless.
+                <p
+                    class="text-textColor mt-5 lg:mt-3 text-base lg:text-lg font-medium lg:font-semibold text-center lg:text-start">
+                    Elevate your SaaS product with this expertly designed template, built for SaaS growth.
                 </p>
-                <div class="flex items-center w-full">
-                <button class="btn mt-5 py-4 px-6 bg-white text-black rounded-xl w-full  opacity-90 hover:opacity-80 duration-200 w-full lg:w-[fit-content] font-semibold">Start Free Trial</button>
             </div>
-            </div>
-            <div class="absolute bottom-0 -right-16 lg:-right-28">
-                <img src="./assets/footer-card-img2.png" class="w-[300px] md:w-[400px] rounded-2xl" alt="">
-                <img src="./assets/footer-card-img1.png" class="absolute top-11 -left-10 w-[300px] md:w-[400px] rounded-2xl" alt="">
-            </div>
-        </div>
-    </section>
 
+            <div class="container mt-5 px-[5%] lg:px-[0px] lg:w-[80%] mx-auto py-10 flex flex-col items-center">
+                <div class="flex flex-col lg:flex-row items-center justify-center relative md:w-1/2 mx-auto">
+                    <div class="toggle bg-secondary border-[1px] border-zinc-300 p-2 rounded-xl">
+                        <button class="toggle-btn active" id="monthlyBtn">Monthly</button>
+                        <button class="toggle-btn" id="yearlyBtn">Yearly</button>
+                    </div>
+                    <div
+                        class="flex items-center gap-2 lg:absolute bottom-4 -right-[14rem] lg:-right-[18%] min-[1660px]:-right-2">
+                        <img src="./assets/arrow-down.svg"
+                            class="absolute top-10 right-0 md:right-16 lg:static rotate-[180deg] lg:rotate-[90deg] transform lg:scale-x-[-1] w-[30px] lg:w-[50px]"
+                            alt="">
+                        <div
+                            class="px-4 py-1 rounded-full text-textColor border-[1px] border-zinc-200 lg:rotate-[10deg]">
+                            40% OFF on Yearly Plan
+                        </div>
+                    </div>
+                </div>
+                <div class="plans grid grid-cols-1 lg:grid-cols-3 mt-10  gap-6">
+                    <div class="plan border-[1px] border-zinc-200 rounded-2xl">
+                        <div class="bg-secondary rounded-t-2xl border-b-[1px] border-zinc-200 text-start p-8">
+                            <h2 class="heading text-3xl font-semibold">Free plan</h2>
+                            <div class="price text-6xl mt-5">$<span class="heading font-semibold"
+                                    id="basicPrice">0</span><span class="text-xl text-textColor">/ per</span><span
+                                    class="text-xl text-textColor" id="basicDuration"> month</span></div>
+                            <p class="text-lg font-semibold text-textColor mt-3">Basic tools to get you started.
+                            </p>
+                            <button
+                                class="btn mt-5 py-4 px-6 bg-black text-white rounded-xl w-full  opacity-90 hover:opacity-80 duration-200">Get
+                                Started</button>
+                        </div>
+                        <div class="text-start px-8 py-4">
+                            <h5 class="text-xl font-semibold">What’s Included
+                            </h5>
+                            <p class="text-textColor text-xl font-medium">Extra features and priority support.
+                            </p>
+                        </div>
+                        <ul class="features px-8 mt-3">
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Task Management
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Data Encryption
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Custom Workflows
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <div class="h-[1px] w-full bg-zinc-200"></div>
+                            <!-- <div class="bg-secondary p-1 border-[1px] border-zinc-200">
+                            <img src="./assets/small-plus.svg" alt="">
+
+                        </div> -->
+                        </div>
+                        <ul class="no-features px-8 mt-3">
+                            <li>
+                                <img src="./assets/cross.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Deadline Alerts
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/cross.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Real Time Sync
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/cross.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Collaboration Tools
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan border-[1px] border-zinc-200 rounded-2xl">
+                        <div class="bg-secondary rounded-t-2xl border-b-[1px] border-zinc-200 text-start p-8">
+                            <h2 class="heading text-3xl font-semibold flex items-center justify-between">Pro plan <div
+                                    class="text-end text-sm text-white bg-black p-2 rounded-full">Most Popular</div>
+                            </h2>
+                            <div class="price text-6xl mt-5">$<span class="heading font-semibold"
+                                    id="proPrice">10</span><span class="text-xl text-textColor">/ per</span><span
+                                    class="text-xl text-textColor" id="proDuration"> month</span></div>
+                            <p class="text-lg font-semibold text-textColor mt-3">Comprehensive solutions for teams.
+                            </p>
+                            <button
+                                class="btn mt-5 py-4 px-6 bg-black text-white rounded-xl w-full  opacity-90 hover:opacity-80 duration-200">Get
+                                Started</button>
+                        </div>
+                        <div class="text-start px-8 py-4">
+                            <h5 class="text-xl font-semibold">What’s Included
+                            </h5>
+                            <p class="text-textColor text-xl font-medium">Full features and dedicated support.
+                            </p>
+                        </div>
+                        <ul class="features px-8 mt-3">
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Task Management
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Data Encryption
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Custom Workflows
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <div class="h-[1px] w-full bg-zinc-200"></div>
+                            <!-- <div class="bg-secondary p-1 border-[1px] border-zinc-200">
+                            <img src="./assets/small-plus.svg" alt="">
+
+                        </div> -->
+                        </div>
+                        <ul class="no-features px-8 mt-3">
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Deadline Alerts
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/cross.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Real Time Sync
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/cross.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Collaboration Tools
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="plan border-[1px] border-zinc-200 rounded-2xl">
+                        <div class="bg-secondary rounded-t-2xl border-b-[1px] border-zinc-200 text-start p-8">
+                            <h2 class="heading text-3xl font-semibold">Enterprise plan</h2>
+                            <div class="price text-6xl mt-5">$<span class="heading font-semibold"
+                                    id="enterprisePrice">19</span><span class="text-xl text-textColor">/ per</span><span
+                                    class="text-xl text-textColor" id="enterpriseDuration"> month</span></div>
+                            <p class="text-lg font-semibold text-textColor mt-3">Basic tools to get you started.
+                            </p>
+                            <button
+                                class="btn mt-5 py-4 px-6 bg-black text-white rounded-xl w-full  opacity-90 hover:opacity-80 duration-200">Get
+                                Started</button>
+                        </div>
+                        <div class="text-start px-8 py-4">
+                            <h5 class="text-xl font-semibold">What’s Included
+                            </h5>
+                            <p class="text-textColor text-xl font-medium">Full features and dedicated support.
+                            </p>
+                        </div>
+                        <ul class="features px-8 mt-3">
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Task Management
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Data Encryption
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Custom Workflows
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <div class="h-[1px] w-full bg-zinc-200"></div>
+                            <!-- <div class="bg-secondary p-1 border-[1px] border-zinc-200">
+                            <img src="./assets/small-plus.svg" alt="">
+
+                        </div> -->
+                        </div>
+                        <ul class="no-features px-8 mt-3">
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Deadline Alerts
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Real Time Sync
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./assets/green-tick.svg" alt="">
+                                <p class="text-textColor text-xl font-medium">Collaboration Tools
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="w-[80%] mx-auto border-t-[1px] border-zinc-200 mt-4 mb-4"></div>
+
+        <!-- All Plans Include -->
+        <section class="px-[5%]">
+            <h4 class="opacity-80 text-lg font-semibold text-center my-5">All Plans Include</h4>
+            <div class="flex items-center justify-center gap-2 flex-wrap">
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                    <img src="./assets/task-mangement.svg" alt="">
+                    <p class="text-textColor font-medium">
+                        Task Mangement</p>
+                </div>
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                    <img src="./assets/real-time.svg" alt="">
+                    <p class="text-textColor font-medium">
+                        Real-time Collaboration</p>
+                </div>
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                    <img src="./assets/documents-sharing.svg" alt="">
+                    <p class="text-textColor font-medium">
+                        Documents Sharing</p>
+                </div>
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                    <img src="./assets/clients-communication.svg" alt="">
+                    <p class="text-textColor font-medium">
+                        Clients Communication</p>
+                </div>
+            </div>
+
+            <div
+                class="footer-card h-[500px] lg:h-[300px] w-[100%] lg:w-[65%] mx-auto mt-20 rounded-xl lg:rounded-3xl relative overflow-hidden">
+                <div class="h-full flex flex-col px-[5%] items-start justify-start lg:justify-center mt-10 lg:mt-0">
+                    <h3 class="heading text-3xl text-white font-semibold text-center">Get Your 14 Days Free Trial Now
+                    </h3>
+                    <p class="text-lg text-zinc-400 font-semibold text-center lg:text-start">Start exploring Genius
+                        risk-free with our 14-day free <br> trial offer today and experience seamless.
+                    </p>
+                    <div class="flex items-center w-full">
+                        <button
+                            class="btn mt-5 py-4 px-6 bg-white text-black rounded-xl w-full  opacity-90 hover:opacity-80 duration-200 w-full lg:w-[fit-content] font-semibold">Start
+                            Free Trial</button>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 -right-16 lg:-right-28">
+                    <img src="./assets/footer-card-img2.png" class="w-[300px] md:w-[400px] rounded-2xl" alt="">
+                    <img src="./assets/footer-card-img1.png"
+                        class="absolute top-11 -left-10 w-[300px] md:w-[400px] rounded-2xl" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQS -->
+        <section class="px-[5%] mt-32">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                    <img src="./assets/faqs.svg" alt="">
+                    <p class="text-textColor font-medium">
+                        FAQS</p>
+                </div>
+                <h2
+                    class="heading text-3xl lg:text-6xl font-bold text-center lg:text-start opacity-90 lg:leading-[4.5rem] mt-5">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="faq-container grid grid-cols-1 lg:grid-cols-2 gap-5 relative z-[2] mt-10 lg:mt-20">
+                <div class="faq-line1 flex flex-col gap-5">
+                    <div class="faq-item">
+                        <button class="faq-question">What is Genius? <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div></button>
+                        <div class="faq-answer">
+                            <p>Genius is a productivity and task management platform that helps you organize,
+                                prioritize,
+                                and track your tasks more effectively.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">is Genius compatible with mobile devices ?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, Genius is accessible on both iOS and Android devices, ensuring you can manage your
+                                tasks
+                                on the go.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"> Can I try Genius for free?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, Genius offers a free plan with essential tools. You can explore all core
+                                functionalities
+                                without any cost.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"> What features are in the Free Plan?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The Free Plan includes basic task management, essential features, and standard support to
+                                get
+                                started with your productivity journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-line2 flex flex-col gap-5">
+                    <div class="faq-item">
+                        <button class="faq-question">How do I upgrade my plan?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can upgrade your plan through your account settings. Select the desired plan and
+                                follow
+                                the prompts to complete the upgrade.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can Genius integrate with other tools?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Genius integrates with popular tools like Google Calendar, Slack, and Trello, allowing
+                                seamless connection with your existing apps.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What is the Enterprise Plan?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The Enterprise Plan is a custom solution designed for large teams, offering advanced
+                                features, dedicated support, and personalized solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"> How do I contact support?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Support can be reached via email, live chat, or through our support portal available
+                                within
+                                your Genius account.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Testimonials -->
+        <section class=" mt-32">
+            <div class="flex flex-col justify-center items-center px-[5%]">
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                    <img src="./assets/testimonials.svg" alt="">
+                    <p class="text-textColor font-medium">
+                        Testimonials</p>
+                </div>
+                <h2
+                    class="heading text-3xl lg:text-6xl font-bold text-center lg:text-start opacity-90 lg:leading-[4.5rem] mt-5">
+                    What our User's Say
+                </h2>
+            </div>
+
+            <div class="company-slider">
+
+                <div class="fade fade-left min-h-[260px] lg:min-h-[350px] "></div> <!-- Left fade effect -->
+                <div class="testimonial-container relative flex gap-5 items-center">                    
+
+                    <!-- Testimonial -->
+                    <div
+                        class="testimonial flex flex-col gap-2 min-w-[350px] h-[320px] bg-secondary border-zinc-200 border-[2px] p-2 rounded-2xl">
+                        <div class="name-image px-5 flex items-center gap-5 h-[20%]">
+                            <img src="./assets/Emily K.png" class="testimonial-image w-[40px]" alt="">
+                            <h4 class="heading testimonial-name font-semibold text-xl">Emily K</h4>
+                        </div>
+                        <div class="testimonial-content bg-white p-4 rounded-2xl h-[80%]">
+                            <img src="./assets/testimonial-stars.svg " alt="">
+                            <p class="testimonial-review text-wrap mt-3 font-bold text-textColor text-lg">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, necessitatibus! Recusandae
+                                voluptatibus assumenda magni consequuntur doloribus atque eum quisquam impedit!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial -->
+                    <div
+                        class="testimonial flex flex-col gap-2 min-w-[350px] h-[320px] bg-secondary border-zinc-200 border-[2px] p-2 rounded-2xl">
+                        <div class="name-image px-5 flex items-center gap-5 h-[20%]">
+                            <img src="./assets/Emily K.png" class="testimonial-image w-[40px]" alt="">
+                            <h4 class="heading testimonial-name font-semibold text-xl">Emily K</h4>
+                        </div>
+                        <div class="testimonial-content bg-white p-4 rounded-2xl h-[80%]">
+                            <img src="./assets/testimonial-stars.svg " alt="">
+                            <p class="testimonial-review text-wrap mt-3 font-bold text-textColor text-lg">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, necessitatibus! Recusandae
+                                voluptatibus assumenda magni consequuntur doloribus atque eum quisquam impedit!
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="testimonial flex flex-col gap-2 min-w-[350px] h-[320px] bg-secondary border-zinc-200 border-[2px] p-2 rounded-2xl">
+                        <div class="name-image px-5 flex items-center gap-5 h-[20%]">
+                            <img src="./assets/Emily K.png" class="testimonial-image w-[40px]" alt="">
+                            <h4 class="heading testimonial-name font-semibold text-xl">Emily K</h4>
+                        </div>
+                        <div class="testimonial-content bg-white p-4 rounded-2xl h-[80%]">
+                            <img src="./assets/testimonial-stars.svg " alt="">
+                            <p class="testimonial-review text-wrap mt-3 font-bold text-textColor text-lg">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, necessitatibus! Recusandae
+                                voluptatibus assumenda magni consequuntur doloribus atque eum quisquam impedit!
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="testimonial flex flex-col gap-2 min-w-[350px] h-[320px] bg-secondary border-zinc-200 border-[2px] p-2 rounded-2xl">
+                        <div class="name-image px-5 flex items-center gap-5 h-[20%]">
+                            <img src="./assets/Emily K.png" class="testimonial-image w-[40px]" alt="">
+                            <h4 class="heading testimonial-name font-semibold text-xl">Emily K</h4>
+                        </div>
+                        <div class="testimonial-content bg-white p-4 rounded-2xl h-[80%]">
+                            <img src="./assets/testimonial-stars.svg " alt="">
+                            <p class="testimonial-review text-wrap mt-3 font-bold text-textColor text-lg">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, necessitatibus! Recusandae
+                                voluptatibus assumenda magni consequuntur doloribus atque eum quisquam impedit!
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="testimonial flex flex-col gap-2 min-w-[350px] h-[320px] bg-secondary border-zinc-200 border-[2px] p-2 rounded-2xl">
+                        <div class="name-image px-5 flex items-center gap-5 h-[20%]">
+                            <img src="./assets/Emily K.png" class="testimonial-image w-[40px]" alt="">
+                            <h4 class="heading testimonial-name font-semibold text-xl">Emily K</h4>
+                        </div>
+                        <div class="testimonial-content bg-white p-4 rounded-2xl h-[80%]">
+                            <img src="./assets/testimonial-stars.svg " alt="">
+                            <p class="testimonial-review text-wrap mt-3 font-bold text-textColor text-lg">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, necessitatibus! Recusandae
+                                voluptatibus assumenda magni consequuntur doloribus atque eum quisquam impedit!
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="testimonial flex flex-col gap-2 min-w-[350px] h-[320px] bg-secondary border-zinc-200 border-[2px] p-2 rounded-2xl">
+                        <div class="name-image px-5 flex items-center gap-5 h-[20%]">
+                            <img src="./assets/Emily K.png" class="testimonial-image w-[40px]" alt="">
+                            <h4 class="heading testimonial-name font-semibold text-xl">Emily K</h4>
+                        </div>
+                        <div class="testimonial-content bg-white p-4 rounded-2xl h-[80%]">
+                            <img src="./assets/testimonial-stars.svg " alt="">
+                            <p class="testimonial-review text-wrap mt-3 font-bold text-textColor text-lg">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, necessitatibus! Recusandae
+                                voluptatibus assumenda magni consequuntur doloribus atque eum quisquam impedit!
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="testimonial flex flex-col gap-2 min-w-[350px] h-[320px] bg-secondary border-zinc-200 border-[2px] p-2 rounded-2xl">
+                        <div class="name-image px-5 flex items-center gap-5 h-[20%]">
+                            <img src="./assets/Emily K.png" class="testimonial-image w-[40px]" alt="">
+                            <h4 class="heading testimonial-name font-semibold text-xl">Emily K</h4>
+                        </div>
+                        <div class="testimonial-content bg-white p-4 rounded-2xl h-[80%]">
+                            <img src="./assets/testimonial-stars.svg " alt="">
+                            <p class="testimonial-review text-wrap mt-3 font-bold text-textColor text-lg">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, necessitatibus! Recusandae
+                                voluptatibus assumenda magni consequuntur doloribus atque eum quisquam impedit!
+                            </p>
+                        </div>
+                    </div>
+                   
+
+                </div>
+                <div class="fade fade-right min-h-[300px] lg:min-h-[350px] "></div> <!-- Right fade effect -->
+            </div>
+
+        </section>
     </main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const video = document.querySelector(".video-player");
-            const playButton = document.querySelector(".play-btn");
+    <script src="script.js">
 
-            // Play video, hide play button, and show video controls
-            playButton.addEventListener("click", () => {
-                video.play();
-                playButton.style.display = "none";
-                video.setAttribute("controls", "controls"); // Add controls attribute to the video
-            });
-
-
-
-            // Show play button when video ends
-            video.addEventListener("ended", () => {
-                playButton.style.display = "block";
-                video.removeAttribute("controls"); // Remove controls when video ends
-            });
-        });
-
-
-    </script>
-
-    <script>
-        const monthlyBtn = document.getElementById('monthlyBtn');
-        const yearlyBtn = document.getElementById('yearlyBtn');
-        const basicPrice = document.getElementById('basicPrice');
-        const proPrice = document.getElementById('proPrice');
-        const enterprisePrice = document.getElementById('enterprisePrice');
-        const basicDuration = document.getElementById('basicDuration');
-        const proDuration = document.getElementById('proDuration');
-        const enterpriseDuration = document.getElementById('enterpriseDuration');
-
-        const monthlyPrices = { basic: 0, pro: 10, enterprise: 19 };
-        const yearlyPrices = { basic: 0, pro: 99, enterprise: 199 };
-
-        function setMonthly() {
-            monthlyBtn.classList.add('active');
-            yearlyBtn.classList.remove('active');
-            basicPrice.textContent = monthlyPrices.basic;
-            proPrice.textContent = monthlyPrices.pro;
-            enterprisePrice.textContent = monthlyPrices.enterprise;
-            basicDuration.textContent = ' month';
-            proDuration.textContent = ' month';
-            enterpriseDuration.textContent = ' month';
-        }
-
-        function setYearly() {
-            yearlyBtn.classList.add('active');
-            monthlyBtn.classList.remove('active');
-            basicPrice.textContent = yearlyPrices.basic;
-            proPrice.textContent = yearlyPrices.pro;
-            enterprisePrice.textContent = yearlyPrices.enterprise;
-            basicDuration.textContent = ' year';
-            proDuration.textContent = ' year';
-            enterpriseDuration.textContent = ' year';
-        }
-
-        monthlyBtn.addEventListener('click', setMonthly);
-        yearlyBtn.addEventListener('click', setYearly);
     </script>
 </body>
 

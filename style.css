@@ -205,6 +205,73 @@ header {
   margin-bottom: 10px;
 }
 
+.faq-container {
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.faq-item {
+  background-color: #F4F7F9;
+  border-radius: 15px;
+  padding: 0 30px;
+  border: 1px solid #ddeffb;
+  overflow: hidden;
+  width: 100%;
+  transition: height 0.5s ease;
+}
+
+.faq-question {
+  color: #000;
+  font-family: "Bricolage Grotesque", sans-serif;
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  transition: max-height 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.faq-answer p {
+  padding: 15px 0;
+  color: #000;
+  margin: 0;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 800px; /* Adjust based on content length */
+}
+
+.cross {
+  transition: transform 0.5s ease;
+}
+
+.faq-item.active .cross {
+  transform: rotate(180deg);
+}
+
+.testimonial-container{
+  animation: scroll 20s linear infinite; /* Scroll horizontally infinitely */
+}
+
+
 /* Keyframes for the scroll animation */
 @keyframes scroll {
   0% {
@@ -222,6 +289,24 @@ header {
   .logo-overlay {
     top: 60px;
   }
+
+  .testimonial-container{
+    animation: scroll 8s linear infinite; /* Scroll horizontally infinitely */
+  }
+
+  .company-slider{
+    width: 95%;
+    margin: 30px auto;
+  }
+  
+  .testimonial{
+    min-width: 300px !important;
+    height: fit-content !important;
+  }
+
+  .testimonial-review{
+    font-size: 14px !important;
+  }
 }
 
 
@@ -229,3 +314,4 @@ header {
   background: url(./assets/footer-card-bg.png) center no-repeat;
   background-size: cover;
 }
+
