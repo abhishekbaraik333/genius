@@ -291,7 +291,7 @@ header {
   }
 
   .testimonial-container{
-    animation: scroll 8s linear infinite; /* Scroll horizontally infinitely */
+    animation: scroll 10s linear infinite; /* Scroll horizontally infinitely */
   }
 
   .company-slider{
