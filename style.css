@@ -205,6 +205,11 @@ header {
   margin-bottom: 10px;
 }
 
+.footer-card{
+  background: url(./assets/footer-card-bg.png) center no-repeat;
+  background-size: cover;
+}
+
 .faq-container {
   max-width: 100%;
   padding: 10px;
@@ -267,7 +272,11 @@ header {
   transform: rotate(180deg);
 }
 
-.testimonial-container{
+/* General testimonial container */
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   animation: scroll 20s linear infinite; /* Scroll horizontally infinitely */
 }
 
@@ -279,8 +288,20 @@ header {
   position: relative;
 }
 
+@media (max-width: 1023px) {
+  .review-slider {
+    width: 95%;
+    margin: 30px auto;
+  }
 
-/* Keyframes for the scroll animation */
+  /* Ensure container has correct width on mobile */
+  .testimonial-container {
+    width: calc(300px * 6); /* Adjust this to the number of testimonials */
+    animation: scrollMobile 40s linear infinite;
+  }
+}
+
+/* Keyframes for the desktop scroll animation */
 @keyframes scroll {
   0% {
     transform: translateX(0%);
@@ -290,39 +311,12 @@ header {
   }
 }
 
-@media (max-width: 1023px) {
-  .dropdown {
-    left: -455%;
+/* Keyframes for mobile scroll animation */
+@keyframes scrollMobile {
+  0% {
+    transform: translateX(0%);
   }
-  .logo-overlay {
-    top: 60px;
-  }
-
-  .testimonial-container{
-    animation: scroll 10s linear infinite; /* Scroll horizontally infinitely */
-  }
-
-  .review-slider{
-    width: 95%;
-    margin: 30px auto;
-  }
-  .fade{
-    width: 50px;
-  }
-  
-  .testimonial{
-    min-width: 300px !important;
-    height: fit-content !important;
-  }
-
-  .testimonial-review{
-    font-size: 14px !important;
+  100% {
+    transform: translateX(calc(-300px * 6)); /* Adjust based on the number of testimonials */
   }
 }
-
-
-.footer-card{
-  background: url(./assets/footer-card-bg.png) center no-repeat;
-  background-size: cover;
-}
-
