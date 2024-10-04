@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1C1C1C',
+                        secondary: "#F8FAFC",
+                        textColor: "#3D495B"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header
+        class=" flex items-center justify-between lg:justify-around py-4 px-5 rounded-xl w-[95%] lg:w-[65%] left-1/2 -translate-x-1/2 fixed top-5 lg:top-10 z-[1000]">
+        <div class="nav-1 text-white gap-6 w-[45%] justify-start hidden lg:flex">
+            <a href="#benefits">Benefits</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#testimonials">Testimonials</a>
+        </div>
+        <div class="flex justify-center w-[10%]">
+            <img src="./assets/logo.svg" alt="">
+        </div>
+        <div class="nav-2 w-[90%] lg:w-[45%] text-white flex items-center gap-8 justify-end">
+            <div class="relative"><!-- Add 'relative' to position dropdown correctly -->
+                <div class="all-pages cursor-pointer">
+                    <span class="lg:flex hidden items-center gap-3">All Pages
+                        <img src="./assets/dropdown.svg" alt="">
+                    </span>
+                    <div class="bg-white p-2 rounded-lg  lg:hidden">
+                        <img src="./assets/hamburger.svg" alt="">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="h-[30px] bg-transparent">
+                    </div>
+                    <div class="dropdown-items">
+                        <a href="">
+                            <div class="house">
+                                <img src="./assets/house.svg" alt="">
+                            </div>
+                            <p>Home</p>
+                        </a>
+                        <a href="">
+                            <div class="house">
+                                <img src="./assets/phone.svg" alt="">
+                            </div>
+                            <p>Contact</p>
+                        </a>
+                        <a href="">
+                            <div class="house">
+                                <img src="./assets/light-2.svg" alt="">
+                            </div>
+                            <p>Waitlist</p>
+                        </a>
+                        <a href="">
+                            <div class="house">
+                                <img src="./assets/lock.svg" alt="">
+                            </div>
+                            <p>Privacy Policy</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white hidden lg:block py-3 px-5 hover:bg-[#F8FAFC] duration-300 text-black rounded-lg">
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Main Body -->
+    <main>
+        <section class="mt-[12rem] px-[5%] lg:px-[25%]">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                    <img src="./assets/lock-dark.svg" alt="">
+                    <p class="text-textColor font-semibold text-lg">
+                        Privacy Policy</p>
+                </div>
+                <h2
+                    class="heading text-3xl lg:text-6xl font-bold text-center lg:text-start opacity-90 lg:leading-[4.5rem] mt-5">
+                    Our Privacy Policy
+                </h2>
+                <p class="text-textColor mt-5 lg:mt-3 text-base lg:text-lg font-medium lg:font-semibold text-center">
+                    Our Privacy Policy outlines how we collect, use, and protect your personal information.Your privacy
+                    and security are our priorities.
+                </p>
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 mt-10">
+                    <img src="./assets/last-updated.svg" alt="">
+                    <p class="text-textColor font-medium">
+                        Last Updated on August, 24, 2024</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="lg:px-[30%] px-[5%] mt-20">
+            <div>
+                <h3 class="heading text-3xl font-semibold">
+                    Information We Collect
+                </h3>
+                <p class="opacity-70 text-lg font-semibold mt-5">
+                    We may collect personal information from you when you visit our website, register for an account, or
+                    interact with our services. This information may include your name, email address, contact details,
+                    and any other information you voluntarily provide to us.
+                </p>
+            </div>
+            <div class="bg-zinc-300 h-[1px] w-full my-10"></div>
+            <div>
+                <h3 class="heading text-3xl font-semibold">
+                    How We Use Your Information
+                </h3>
+                <p class="opacity-70 text-lg font-semibold mt-5">
+                    We may use the information we collect from you for various purposes, including:
+                    <br> <br>
+                    1. Providing and improving our products and services
+                    <br>
+                    2. Personalizing your experience on our website
+                    <br>
+                    3. Communicating with you about your account and any updates or promotions
+                    <br>
+                    4. Analyzing website traffic and user behavior to enhance our offerings
+                </p>
+            </div>
+            <div class="bg-zinc-300 h-[1px] w-full my-10"></div>
+            <div>
+                <h3 class="heading text-3xl font-semibold">
+                    Data Security
+                </h3>
+                <p class="opacity-70 text-lg font-semibold mt-5">
+                    We take data security seriously and employ industry-standard measures to protect your personal
+                    information from unauthorized access, disclosure, alteration, or destruction. However, no method of
+                    transmission over the internet or electronic storage is 100% secure, and we cannot guarantee
+                    absolute security.
+                </p>
+            </div>
+            <div class="bg-zinc-300 h-[1px] w-full my-10"></div>
+
+            <div>
+                <h3 class="heading text-3xl font-semibold">
+                    Third-Party Disclosure
+
+                </h3>
+                <p class="opacity-70 text-lg font-semibold mt-5">
+                    We do not sell, trade, or otherwise transfer your personal information to third parties without your
+                    consent, except as required by law or as necessary to provide our services. We may share your
+                    information with trusted third-party service providers who assist us in operating our website,
+                    conducting our business, or servicing you, provided that they agree to keep your information
+                    confidential.
+                </p>
+            </div>
+            <div class="bg-zinc-300 h-[1px] w-full my-10"></div>
+
+            <div>
+                <h3 class="heading text-3xl font-semibold">
+                    Cookies
+
+                </h3>
+                <p class="opacity-70 text-lg font-semibold mt-5">
+                    Our website may use cookies to enhance your browsing experience and collect information about how
+                    you interact with our site. You can adjust your browser settings to refuse cookies or alert you when
+                    cookies are being sent, but some features of the site may not function properly without cookies.
+                </p>
+            </div>
+            <div class="bg-zinc-300 h-[1px] w-full my-10"></div>
+
+            <div>
+                <h3 class="heading text-3xl font-semibold">
+                    Changes to this Privacy Policy
+
+
+                </h3>
+                <p class="opacity-70 text-lg font-semibold mt-5">
+                    We reserve the right to update or change this Privacy Policy at any time. Any changes will be posted on this page, and the effective date will be updated accordingly. We encourage you to review this Privacy Policy periodically for any updates.
+                </p>
+            </div>
+            <div class="bg-zinc-300 h-[1px] w-full my-10"></div>
+
+            <div>
+                <h3 class="heading text-3xl font-semibold">
+                    Contact Us
+
+                </h3>
+                <p class="opacity-70 text-lg font-semibold mt-5">
+                    If you have any questions or concerns about our Privacy Policy or the handling of your personal information, please contact us at <a class="opacity-90 text-black" href="mailto:hello@gmail.com">hello@genius.com</a> 
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class=" pt-40 px-[5%]">
+        <div class="flex flex-col justify-center items-center gap-5">
+            <img src="./assets/logo-3.svg" alt="">
+            <div>
+                <p class="heading text-textColor text-xl text-center">
+                    Empowering your productivity with <br> intuitive tools and seamless solutions.
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 mt-10">
+            <div class="bg-[#F4F7F9] h-[2px] w-full"></div>
+            <a href="mailto:hello@genius.com"
+                class="bg-secondary border-[1px] border-[#F9F5f5] rounded-xl flex justify-center py-3 w-[1200px] lg:w-[500px]">
+                <div class="flex items-center gap-1  w-fit">
+                    <img src="./assets/mail.svg" alt="">
+                    <p class="font-semibold">hello@genius.com</p>
+                </div>
+            </a>
+            <div class="bg-[#F4F7F9] h-[2px] w-full"></div>
+        </div>
+
+        <div class="mt-20">
+            <div
+                class="flex flex-wrap items-center bg-zinc-900 text-white font-bold w-full lg:w-[40%] mx-auto lg:justify-between px-[5%] justify-center lg:px-[2%] py-4 rounded-xl opacity-90">
+                <a href="./index.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
+                    <p>Home</p>
+                </a>
+                <a href="./contact.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
+                    <p>Contact</p>
+                </a>
+                <a href="./waitlist.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
+                    <p>Waitlist</p>
+                </a>
+                <a href="./privacy.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
+                    <p>Privacy Policy</p>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="bg-[#F4F7F9] my-10 h-[2px] w-full"></div>
+
+        <div class=" justify-between flex flex-col-reverse lg:flex-row gap-10 lg:gap-0 items-center lg:py-10 pb-5">
+            <div>All Rights Reserved.</div>
+            <div class="flex gap-3 items-center justify-center">
+                <a href="#" class="bg-zinc-800 block w-fit p-2 rounded-xl">
+                    <img src="./assets/linkedin.svg" width="25" alt="">
+                </a>
+                <a href="#" class="bg-zinc-800 block w-fit p-2 rounded-xl">
+                    <img src="./assets/instagram.svg" width="25" alt="">
+                </a>
+                <a href="#" class="bg-zinc-800 block w-fit p-2 rounded-xl">
+                    <img src="./assets/twitter.svg" width="25" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="./privacy.html" class="font-bold opacity-80 hover:opacity-100 duration-200">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
