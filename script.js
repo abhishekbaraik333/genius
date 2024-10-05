@@ -58,6 +58,91 @@ document.addEventListener("DOMContentLoaded", () => {
         playButton.style.display = "block";
         video.removeAttribute("controls"); // Remove controls when video ends
     });
+
+    // Initial timer values in seconds
+let totalSeconds = (323 * 24 * 3600) + (4 * 3600) + (54 * 60) + 60;
+
+function startTimer() {
+    const daysElement = document.getElementById('days');
+    const hoursElement = document.getElementById('hours');
+    const minutesElement = document.getElementById('minutes');
+    const secondsElement = document.getElementById('seconds');
+
+    const countdown = setInterval(() => {
+        if (totalSeconds <= 0) {
+            clearInterval(countdown);
+            return;
+        }
+
+        // Calculate days, hours, minutes, and seconds
+        const days = Math.floor(totalSeconds / (24 * 3600));
+        const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        // Update the HTML
+        daysElement.textContent = days.toString().padStart(3, '0');
+        hoursElement.textContent = hours.toString().padStart(2, '0');
+        minutesElement.textContent = minutes.toString().padStart(2, '0');
+        secondsElement.textContent = seconds.toString().padStart(2, '0');
+
+        // Decrement the total seconds
+        totalSeconds--;
+    }, 1000);
+}
+
+// Start the countdown timer
+startTimer();
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".join", {
+    opacity:0,
+    scale:0.5,
+    duration: 1,
+    ease: "power2", // Optional easing function for smooth transition
+  });
+
+  gsap.from(".title", {
+    opacity:0,
+    y:50,
+    scale:0.5,
+    duration: 1,
+    delay:0.2,
+
+  }); 
+  gsap.from(".subtitle", {
+    opacity:0,
+    scale:0.5,
+    y:50,
+    duration: 1,
+    delay:0.4
+  }); 
+
+  gsap.from(".get-btn-container", {
+    opacity:0,
+    scale:0.5,
+    y:50,
+    duration: 1,
+    delay:0.6
+  }); 
+
+  gsap.from(".loved-by", {
+    opacity:0,
+    scale:0.5,
+    y:50,
+    duration: 1,
+    delay:0.8
+  }); 
+
+  gsap.from(".sketch", {
+    opacity:0,
+    duration: 1,
+    delay:1
+  }); 
 });
 
 const monthlyBtn = document.getElementById('monthlyBtn');
@@ -96,3 +181,5 @@ const monthlyBtn = document.getElementById('monthlyBtn');
 
         monthlyBtn.addEventListener('click', setMonthly);
         yearlyBtn.addEventListener('click', setYearly);
+
+

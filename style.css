@@ -311,6 +311,22 @@ header {
   position: relative;
 }
 
+.timer-container {
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#hours, #minutes, #seconds {
+  color: #000000;
+}
+
 @media (max-width: 1023px) {
   .review-slider {
     width: 95%;

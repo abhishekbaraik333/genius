@@ -81,8 +81,9 @@
                     </div>
                 </div>
             </div>
-            <a href="./contact.html" class="bg-white hidden lg:block py-3 px-5 hover:bg-[#F8FAFC] duration-300 text-black rounded-lg">
-                <h2 >Contact</h2>
+            <a href="./contact.html"
+                class="bg-white hidden lg:block py-3 px-5 hover:bg-[#F8FAFC] duration-300 text-black rounded-lg">
+                <h2>Contact</h2>
             </a>
         </div>
 
@@ -94,29 +95,35 @@
         <!-- Hero Section -->
         <section
             class="h-[100vh] mt-[3rem] lg:w-[65%] px-[5%] lg:px-0 mx-auto flex flex-col items-center justify-center ">
-            <a href="./waitlist.html"
-                class="flex items-center border-[1px] mb-5 lg:mb-0 border-zinc-200 hover:bg-[#F8FAFC] py-2 px-3 duration-200 gap-1 rounded-full">
-                <img src="./assets/light.svg" alt="">
-                <p>Join the waitlist for updates</p>
-                <div class="bg-primary p-[3px] rounded-full">
-                    <img src="./assets/arrow-right.svg" alt="">
-                </div>
-            </a>
-            <div class="flex flex-col items-center text-center relative">
-                <h1 class="heading text-4xl lg:text-7xl font-bold  lg:leading-[5.5rem]">
+
+            <div class="join"> 
+                <a href="./waitlist.html"
+                    class=" flex items-center border-[1px] mb-5 border-zinc-200 hover:bg-[#F8FAFC] py-2 px-3 duration-200 gap-1 rounded-full">
+                    <img src="./assets/light.svg" alt="">
+                    <p>Join the waitlist for updates</p>
+                    <div class="bg-primary p-[3px] rounded-full">
+                        <img src="./assets/arrow-right.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="flex flex-col items-center text-center relative ">
+                <h1 class="title heading text-4xl lg:text-7xl font-bold  lg:leading-[5.5rem]">
                     Elevate Your SaaS Product with This Standout Template
                 </h1>
-                <img src="./assets/sketch.avif" class="hidden lg:block absolute top-[5rem] right-[25%]" width="250"
+                <img src="./assets/sketch.avif" class="sketch hidden lg:block absolute top-[5rem] right-[25%]" width="250"
                     alt="">
-                <p class="text-textColor lg:text-lg mt-10 lg:mt-0">Elevate your SaaS product with this expertly designed
+                <p class="subtitle text-textColor lg:text-lg mt-5">Elevate your SaaS product with this expertly
+                    designed
                     template,
                     built for SaaS growth.</p>
             </div>
+            <div class="get-btn-container mt-10">
             <a href="#pricing"
-                class="get-btn mt-10 bg-primary text-white text-lg hover:opacity-90 duration-300 px-6 py-4 rounded-xl">
+                class="get-btn bg-primary text-white text-lg hover:opacity-90 duration-300 px-6 py-4 rounded-xl">
                 Get this Template
             </a>
-            <div class="flex mt-10 items-center bg-[#F8FAFC] border-[1px] border-zinc-200 rounded-full">
+        </div>
+            <div class="loved-by flex mt-10 items-center bg-[#F8FAFC] border-[1px] border-zinc-200 rounded-full">
                 <div class="flex items-center relative">
                     <div class="border-[3px] border-white rounded-full">
                         <img src="./assets/person-1.avif" width="30" alt="">
@@ -1332,21 +1339,26 @@
         </div>
 
         <div class="mt-20">
-            <div class="flex flex-wrap items-center bg-zinc-900 text-white font-bold w-full lg:w-[40%] mx-auto lg:justify-between px-[5%] justify-center lg:px-[2%] py-4 rounded-xl opacity-90">
-                <a href="./index.html" class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
-                    
+            <div
+                class="flex flex-wrap items-center bg-zinc-900 text-white font-bold w-full lg:w-[40%] mx-auto lg:justify-between px-[5%] justify-center lg:px-[2%] py-4 rounded-xl opacity-90">
+                <a href="./index.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
                     <p>Home</p>
                 </a>
-                <a href="./contact.html" class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
-                    
+                <a href="./contact.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
                     <p>Contact</p>
                 </a>
-                <a href="./waitlist.html" class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
-                    
+                <a href="./waitlist.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
                     <p>Waitlist</p>
                 </a>
-                <a href="./privacy.html" class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
-                    
+                <a href="./privacy.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
                     <p>Privacy Policy</p>
                 </a>
 
@@ -1376,6 +1388,9 @@
         </div>
 
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script src="script.js">
 
