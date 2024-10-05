@@ -27,6 +27,18 @@ document.addEventListener("DOMContentLoaded", () => {
   
   });
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const dropdown = document.getElementsByClassName("dropdown")
+    const hamburger = document.getElementsByClassName("all-pages")
+
+    hamburger.addEventListener("click",() => {
+      dropdown.style.opacity= "0%";
+    })
+    
+    });
+
+  
+
 
   document.addEventListener("DOMContentLoaded", () => {
     const video = document.querySelector(".video-player");

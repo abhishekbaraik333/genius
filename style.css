@@ -45,12 +45,13 @@ header {
 }
 
 .dropdown-items {
-  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+  background-color: rgba(13, 13, 13, 0.85);
   -webkit-backdrop-filter: blur(10px); /* For Safari */
-  background: rgba(13, 13, 13, 0.8);
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px 0px;
-  opacity: 1;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px 0px; */
 }
 
 .dropdown-items a {
