@@ -322,6 +322,13 @@ header {
     width: calc(300px * 6); /* Adjust this to the number of testimonials */
     animation: scrollMobile 40s linear infinite;
   }
+  .faq-item{
+    padding: 0 10px;
+  }
+  .cross{
+    min-width: 20px;
+    min-height: 20px;
+  }
 }
 
 /* Keyframes for the desktop scroll animation */
