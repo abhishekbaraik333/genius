@@ -285,6 +285,8 @@ header {
 
 .cross {
   transition: transform 0.5s ease;
+  min-width: 25px;
+  min-height: 25px;
 }
 
 .faq-item.active .cross {
