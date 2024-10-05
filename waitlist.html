@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1C1C1C',
+                        secondary: "#F8FAFC",
+                        textColor: "#3D495B"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header
+    class=" flex items-center justify-between lg:justify-around py-4 px-5 rounded-xl w-[95%] lg:w-[65%] left-1/2 -translate-x-1/2 fixed top-5 lg:top-10 z-[1000]">
+    <div class="nav-1 text-white gap-6 w-[45%] justify-start hidden lg:flex">
+        <a href="#benefits">Benefits</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+    </div>
+    <a href="./index.html" class="flex justify-center w-[10%]">
+        <img src="./assets/logo.svg" alt="">
+    </a>
+    <div class="nav-2 w-[90%] lg:w-[45%] text-white flex items-center gap-8 justify-end">
+        <div class="relative"><!-- Add 'relative' to position dropdown correctly -->
+            <div class="all-pages cursor-pointer">
+                <span class="lg:flex hidden items-center gap-3">All Pages
+                    <img src="./assets/dropdown.svg" alt="">
+                </span>
+                <div class="bg-white p-2 rounded-lg  lg:hidden">
+                    <img src="./assets/hamburger.svg" alt="">
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="h-[30px] bg-transparent">
+                </div>
+                <div class="dropdown-items">
+                    <a href="./index.html">
+                        <div class="house">
+                            <img src="./assets/house.svg" alt="">
+                        </div>
+                        <p>Home</p>
+                    </a>
+                    <a href="./contact.html">
+                        <div class="house">
+                            <img src="./assets/phone.svg" alt="">
+                        </div>
+                        <p>Contact</p>
+                    </a>
+                    <a href="./waitlist.html">
+                        <div class="house">
+                            <img src="./assets/light-2.svg" alt="">
+                        </div>
+                        <p>Waitlist</p>
+                    </a>
+                    <a href="./privacy.html">
+                        <div class="house">
+                            <img src="./assets/lock.svg" alt="">
+                        </div>
+                        <p>Privacy Policy</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="bg-white hidden lg:block py-3 px-5 hover:bg-[#F8FAFC] duration-300 text-black rounded-lg">
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+
+</header>
+
+    <!--Main Body -->
+    <main>
+
+        <section class="mt-[12rem] px-[5%] lg:px-[25%]">
+            <div class="flex flex-col justify-center items-center">
+
+                <div class=" flex flex-col justify-center items-center lg:w-[65%] mx-auto relative">
+                    <img src="./assets/logo-2.svg" class="lg:w-[100px] w-[50px]" alt="">
+                    <div class="waitlist-overlay">
+                    </div>
+
+                </div>
+
+                <div
+                    class="flex mt-10 items-center p-1 bg-zinc-800 border-[1px] border-zinc-200 rounded-full relative z-[2]">
+                    <div class="flex items-center relative">
+                        <div class="border-[3px] border-zinc-800 rounded-full">
+                            <img src="./assets/person-1.avif" width="30" alt="">
+                        </div>
+                        <div class="border-[3px] relative right-4 border-zinc-800 rounded-full">
+                            <img src="./assets/person-2.avif" width="30" alt="">
+                        </div>
+                        <div class="border-[3px] right-8 relative border-zinc-800 rounded-full">
+                            <img src="./assets/person-3.avif" width="30" alt="">
+                        </div>
+                    </div>
+                    <p class="text-white relative right-6 text-sm md:text-base">Join 3 million other users on waitlist
+                    </p>
+                </div>
+                <h2
+                    class="heading text-3xl lg:text-6xl font-bold text-center lg:text-start opacity-90 lg:leading-[4.5rem] mt-5">
+                    Get early access
+
+                </h2>
+                <p
+                    class="text-textColor mt-5 lg:mt-3 text-base lg:text-lg font-medium lg:font-semibold text-center relative z-[2]">
+                    Be amongst the first to experience Wait and launch a viral waitlist. Sign up to be notified when we
+                    launch!
+                </p>
+
+            </div>
+        </section>
+
+        <section class="lg:px-[30%] px-[5%]">
+            <div class=" rounded-xl p-5 lg:p-10">
+                <form action="">
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-5">
+
+                        <div class="flex-col items-start flex gap-2 w-full">
+                            <input type="email"
+                                class="border-[#DDE5ED] bg-secondary border-[1px] px-4 lg:px-6 py-2 lg:py-4 rounded-xl w-full"
+                                placeholder="Enter your Email" required>
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit"
+                                class="text-nowrap bg-black px-4 lg:px-6 py-2 lg:py-4 text-white rounded-xl font-bold">Join
+                                Waitlist</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="flex justify-center mt-10">
+                    <div
+                        class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 w-fit ">
+                        <img src="./assets/no-spam.svg" alt="">
+                        <p class="text-textColor font-medium">
+                            No Spam, Only Genuine Updates</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- video section -->
+        <div
+            class="lg:w-[65%] w-[90%] lg:px-0 border-4 lg:border-8 border-white shadow-2xl mt-20 rounded-3xl mx-auto relative overflow-hidden">
+            <video poster="./assets/video-bg.jpg" src="./assets/video.mp4"
+                class="video-player h-full w-full hover:brightness-75 duration-200"></video>
+            <img src="./assets/play.svg"
+                class="play-btn w-[50px] h-[50px] absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
+                alt="Play Button">
+        </div>
+
+        <!-- FAQS -->
+        <section class="px-[5%] mt-32">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" bg-secondary border-[1px] border-zinc-300 px-4 py-1 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                    <img src="./assets/faqs.svg" alt="">
+                    <p class="text-textColor font-medium">
+                        FAQS</p>
+                </div>
+                <h2
+                    class="heading text-3xl lg:text-6xl font-bold text-center lg:text-start opacity-90 lg:leading-[4.5rem] mt-5">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="faq-container grid grid-cols-1 lg:grid-cols-2 gap-5 relative z-[2] mt-10 lg:mt-20">
+                <div class="faq-line1 flex flex-col gap-5">
+                    <div class="faq-item">
+                        <button class="faq-question">What is Genius? <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div></button>
+                        <div class="faq-answer">
+                            <p>Genius is a productivity and task management platform that helps you organize,
+                                prioritize,
+                                and track your tasks more effectively.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">is Genius compatible with mobile devices ?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, Genius is accessible on both iOS and Android devices, ensuring you can manage your
+                                tasks
+                                on the go.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"> Can I try Genius for free?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, Genius offers a free plan with essential tools. You can explore all core
+                                functionalities
+                                without any cost.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"> What features are in the Free Plan?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The Free Plan includes basic task management, essential features, and standard support to
+                                get
+                                started with your productivity journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-line2 flex flex-col gap-5">
+                    <div class="faq-item">
+                        <button class="faq-question">How do I upgrade my plan?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can upgrade your plan through your account settings. Select the desired plan and
+                                follow
+                                the prompts to complete the upgrade.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can Genius integrate with other tools?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Genius integrates with popular tools like Google Calendar, Slack, and Trello, allowing
+                                seamless connection with your existing apps.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What is the Enterprise Plan?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The Enterprise Plan is a custom solution designed for large teams, offering advanced
+                                features, dedicated support, and personalized solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"> How do I contact support?
+                            <div class="bg-black p-2 rounded-full opacity-80">
+                                <img src="./assets/plus.svg" class="cross " alt="">
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Support can be reached via email, live chat, or through our support portal available
+                                within
+                                your Genius account.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start free trial card -->
+        <section class="px-[5%] mt-20">
+            <div
+                class="footer-card flex flex-col py-10 lg:py-0 lg:flex-row h-fit lg:h-[300px] w-[100%] lg:w-[70%] mx-auto mt-20 rounded-xl lg:rounded-3xl relative overflow-hidden">
+                <div
+                    class="lg:w-[70%] h-full flex flex-col px-[5%] items-start justify-start lg:justify-center lg:mt-0">
+                    <h3 class="heading text-5xl text-white font-semibold text-center">Get Your Free Trial Now
+                    </h3>
+                    <p class="text-lg text-zinc-400 font-semibold text-center lg:text-start mt-5">Take the first step
+                        towards
+                        enhanced productivity—sign up now <br> and start your free trial with Genius.
+                    </p>
+                    <div class="flex gap-3 mt-5 flex-wrap justify-center">
+                        <div
+                            class=" bg-[#393939] border-[1px] border-zinc-500 px-4 py-2 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-white font-medium">
+                                Instant Access</p>
+                        </div>
+                        <div
+                            class=" bg-[#393939] border-[1px] border-zinc-500 px-4 py-2 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-white font-medium">
+                                Boost Productivity </p>
+                        </div>
+                        <div
+                            class=" bg-[#393939] border-[1px] border-zinc-500 px-4 py-2 rounded-2xl lg:rounded-full relative z-[2] flex items-start lg:items-center justify-center gap-1 ">
+                            <img src="./assets/green-tick.svg" alt="">
+                            <p class="text-white font-medium">
+                                Easy Access</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-[30%] flex items-center justify-center gap-10 relative">
+                    <img src="./assets/arrow-down.svg"
+                        class="invert transform scale-x-[-1] absolute -right-5 rotate-90  lg:-left-8 lg:top-16 lg:-rotate-90"
+                        alt="">
+                    <div class="flex items-start justify-center">
+                        <button
+                            class="btn mt-5 py-4 px-8 bg-white text-black rounded-xl w-full  opacity-90 hover:opacity-80 duration-200 w-full lg:w-[fit-content] font-semibold">Star
+                            Free Trial
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class=" pt-40 px-[5%]">
+        <div class="flex flex-col justify-center items-center gap-5">
+            <img src="./assets/logo-3.svg" alt="">
+            <div>
+                <p class="heading text-textColor text-xl text-center">
+                    Empowering your productivity with <br> intuitive tools and seamless solutions.
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 mt-10">
+            <div class="bg-[#F4F7F9] h-[2px] w-full"></div>
+            <a href="mailto:hello@genius.com"
+                class="bg-secondary border-[1px] border-[#F9F5f5] rounded-xl flex justify-center py-3 w-[1200px] lg:w-[500px]">
+                <div class="flex items-center gap-1  w-fit">
+                    <img src="./assets/mail.svg" alt="">
+                    <p class="font-semibold">hello@genius.com</p>
+                </div>
+            </a>
+            <div class="bg-[#F4F7F9] h-[2px] w-full"></div>
+        </div>
+
+        <div class="mt-20">
+            <div
+                class="flex flex-wrap items-center bg-zinc-900 text-white font-bold w-full lg:w-[40%] mx-auto lg:justify-between px-[5%] justify-center lg:px-[2%] py-4 rounded-xl opacity-90">
+                <a href="./index.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
+                    <p>Home</p>
+                </a>
+                <a href="./contact.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
+                    <p>Contact</p>
+                </a>
+                <a href="./waitlist.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
+                    <p>Waitlist</p>
+                </a>
+                <a href="./privacy.html"
+                    class="bg-transparent hover:bg-zinc-700 px-2 py-2 rounded-xl border-zinc-900 opacity-90 border-[1px] hover:border-zinc-500 duration-300">
+
+                    <p>Privacy Policy</p>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="bg-[#F4F7F9] my-10 h-[2px] w-full"></div>
+
+        <div class=" justify-between flex flex-col-reverse lg:flex-row gap-10 lg:gap-0 items-center lg:py-10 pb-5">
+            <div>All Rights Reserved.</div>
+            <div class="flex gap-3 items-center justify-center">
+                <a href="#" class="bg-zinc-800 block w-fit p-2 rounded-xl">
+                    <img src="./assets/linkedin.svg" width="25" alt="">
+                </a>
+                <a href="#" class="bg-zinc-800 block w-fit p-2 rounded-xl">
+                    <img src="./assets/instagram.svg" width="25" alt="">
+                </a>
+                <a href="#" class="bg-zinc-800 block w-fit p-2 rounded-xl">
+                    <img src="./assets/twitter.svg" width="25" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="./privacy.html" class="font-bold opacity-80 hover:opacity-100 duration-200">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
